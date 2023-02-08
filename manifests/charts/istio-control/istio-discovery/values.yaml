@@ -19,7 +19,7 @@ pilot:
   # Resources for a small pilot install
   resources:
     requests:
-      cpu: 500m
+      cpu: 300m
       memory: 2048Mi
 
   env: {}
