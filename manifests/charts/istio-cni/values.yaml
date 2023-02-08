@@ -13,7 +13,7 @@ cni:
 
   # CNI bin and conf dir override settings
   # defaults:
-  cniBinDir: /opt/cni/bin
+  cniBinDir: /var/lib/cni
   cniConfDir: /etc/cni/net.d
   cniConfFileName: ""
 
