@@ -54,6 +54,8 @@ spec:
           operator: Exists
      # priorityClassName: system-node-critical
       serviceAccountName: istio-cni
+      securityContext:
+        runAsUser: 0
       # Minimize downtime during a rolling upgrade or deletion; tell Kubernetes to do a "force
       # deletion": https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods.
       terminationGracePeriodSeconds: 5
