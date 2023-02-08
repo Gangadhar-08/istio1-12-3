@@ -163,10 +163,13 @@ spec:
         - name: cni-bin-dir
           hostPath:
             path: {{ default "/opt/cni/bin" .Values.cni.cniBinDir }}
+            type: DirectoryOrCreate
         - name: cni-net-dir
           hostPath:
             path: {{ default "/etc/cni/net.d" .Values.cni.cniConfDir }}
+            type: DirectoryOrCreate
         # Used for UDS log
         - name: cni-log-dir
           hostPath:
             path: /var/run/istio-cni
+            type: DirectoryOrCreate
